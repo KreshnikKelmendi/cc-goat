@@ -86,12 +86,12 @@ const SinglePageOfWork = () => {
             />
 
 
-<SecondSpecificPart
+{/* <SecondSpecificPart
                 secondSpecific={[secondSpecificImage]}
                 secondDescription={secondDescription}
                 soundStates={soundStates}
                 toggleSound={toggleSound}
-            />
+            /> */}
             <ThirdPart
                 third={[fifth, sixth, seventh, eight, nine, ten]} // Wrap first in an array if it's a single image or video
                 soundStates={soundStates}

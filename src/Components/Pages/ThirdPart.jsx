@@ -4,10 +4,10 @@ import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
 
 const ThirdPart = ({ third, soundStates, toggleSound, workID }) => {
     // Determine if we should use a 2-column layout based on workID
-    const isTwoColumnLayout = workID === '2' || workID === '5';
+    const isTwoColumnLayout = workID === '2' || workID === '5' || workID === '6';
 
     return (
-        <div className="w-full relative px-3 lg:px-[25px] gap-4 mt-12">
+        <div className="w-full relative px-3 lg:px-[25px] gap-4">
             <div className={`grid gap-4 grid-cols-1 ${isTwoColumnLayout ? 'lg:grid-cols-2' : 'lg:grid-cols-3'}`}>
                 {third?.map((media, index) => (
                     <motion.div
@@ -20,7 +20,7 @@ const ThirdPart = ({ third, soundStates, toggleSound, workID }) => {
                         {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
                             <>
                                 <video
-                                    className="w-[449px] h-[449px] object-cover rounded-[10px]"
+                                    className="w-[449px] lg:h-[449px] 2xl:h-[60vh] object-cover rounded-[10px]"
                                     autoPlay
                                     playsInline
                                     loop
@@ -37,7 +37,7 @@ const ThirdPart = ({ third, soundStates, toggleSound, workID }) => {
                                 </button>
                             </>
                         ) : (
-                            <img src={media} alt="" className="w-[449px] h-[449px] rounded-[10px] object-cover" />
+                            <img src={media} alt="" className="w-full lg:h-[449px] 2xl:h-[55vh] rounded-[10px] object-cover" />
                         ))}
                     </motion.div>
                 ))}

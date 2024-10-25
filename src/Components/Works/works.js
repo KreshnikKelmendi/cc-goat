@@ -49,6 +49,14 @@ import nature1 from "../Assets/nature-1.png"
 import nature2 from "../Assets/nature-2.png"
 import nature3 from "../Assets/nature-specific.png"
 
+import cadhom from "../Assets/cadhom-main.png"
+import cadhomCover from "../Assets/cadhom-cover.png"
+import cadhom1 from "../Assets/cadhom-1.png"
+import cadhom2 from "../Assets/cadhom-2.png"
+import cadhom3 from "../Assets/cadhom-specific.png"
+import cadhom4 from "../Assets/cadhom-3.png"
+import cadhom5 from "../Assets/cadhom-4.png"
+
 
 const data = [
     {
@@ -129,6 +137,19 @@ const data = [
         first: nature1,
         second: nature2,
         specificImage: nature3
+      },
+      {
+        id: 6,
+        main: cadhom, // Replace with actual image URL
+        cover: cadhomCover,
+        title: 'CADHOM',
+        category: 'Branding, Animation, Websites, Packaging, Illustration',
+        description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
+        first: cadhom1,
+        second: cadhom2,
+        specificImage: cadhom3,
+        fifth: cadhom4,
+        sixth: cadhom5
       },
     
   ];

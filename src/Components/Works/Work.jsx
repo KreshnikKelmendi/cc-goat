@@ -19,7 +19,7 @@ const Work = () => {
             <img 
               src={item.main} 
               alt={item.title} 
-              className="w-full h-[420px] object-cover cursor-pointer rounded-[10px]"
+              className="w-full 2xl:h-[70vh] lg:h-[420px] object-cover cursor-pointer rounded-[10px]"
             />
 
             {/* "See More" Button */}
