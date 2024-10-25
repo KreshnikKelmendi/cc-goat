@@ -4,6 +4,7 @@ import videoFile from '../Assets/final_dra2ft.mp4'; // Import the video file
 import { motion } from 'framer-motion';
 import { TextAnimation } from './TextAnimation';
 import WorkSlider from '../WorkSlider/WorkSlider';
+import { Example } from '../Mouse/Example';
 
 const VideoBanner = () => {
   const [showText, setShowText] = useState(false); // State to handle text visibility
@@ -55,9 +56,10 @@ const VideoBanner = () => {
           <Navbar />
         </div>
 
-        <div className=' w-full h-[75vh] lg:h-[100vh] flex justify-center items-center'>
+        <div className='w-full h-[75vh] lg:h-[100vh] flex justify-center items-center'>
           {showText && (
             <>
+            
               <div className='absolute h-[75vh] lg:h-[100vh] inset-0 flex items-center z-10 pl-6 lg:pl-[107px] bg-[#A055FF] rounded-b-[15px] lg:rounded-[12px]'>
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
@@ -90,14 +92,17 @@ const VideoBanner = () => {
                   <path d="M58.7053 114.069L50.8259 117.777L50.4929 117.934C50.4037 117.974 50.3096 117.996 50.2179 117.996C49.9791 117.996 49.7499 117.863 49.6389 117.635C49.4869 117.321 49.622 116.946 49.9405 116.794L50.3675 116.595L58.1528 112.931C58.4713 112.782 58.8549 112.915 59.0069 113.228C59.1589 113.542 59.0238 113.919 58.7053 114.069Z" fill="white" />
                 </svg>
               </div>
+              
+              
+              
             </>
           )}
         </div>
 
       </div>
-      <div className='relative'>
+      {/* <div className='relative'>
         <WorkSlider />
-      </div>
+      </div> */}
     </>
   );
 };

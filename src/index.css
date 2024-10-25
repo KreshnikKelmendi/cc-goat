@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body{
+  background-color: #FCF5F2;
+}
+
 .navbar-shadow{
   box-shadow: 8px 11px 0px 0px #181919;
 }
@@ -47,4 +51,13 @@
   animation: subtleEyeMovement 2s ease-in-out infinite; /* Looping the animation */
 }
 
+
+
+.custom-dot-list-style .react-multi-carousel-dot button {
+  background-color: #6BECD0; /* Your custom color for inactive dots */
+}
+
+.custom-dot-list-style .react-multi-carousel-dot--active button {
+  background-color: #181919; /* Your custom color for active dots */
+}
 

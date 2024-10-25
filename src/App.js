@@ -1,16 +1,23 @@
-import Navbar from "./Components/navbar/Navbar";
-import ContactBanner from "./Components/VideoBanner/ContactBanner";
-import VideoBanner from "./Components/VideoBanner/VideoBanner";
-import WorkSlider from "./Components/WorkSlider/WorkSlider";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./Components/Pages/HomePage";
+import Footer from "./Components/Footer/Footer";
+import WorkPage from "./Components/Pages/WorkPage";
+import SinglePageOfWork from "./Components/Pages/SinglePageOfWork";
 
 
 function App() {
   return (
-    <div className="lg:p-[25px]">
-      <VideoBanner />
-      <ContactBanner />
+    <>
+     <BrowserRouter>
+     <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/work" element={<WorkPage />} />
+            <Route path="/work/:workID" element={<SinglePageOfWork />} />
 
-    </div>
+      </Routes>
+      <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
