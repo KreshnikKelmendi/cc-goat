@@ -11,7 +11,7 @@ const AnimatedText = ({
   repeatDelay,
   animation = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeOut'  } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeOut' } }
   }
 }) => {
   const controls = useAnimation();
@@ -77,25 +77,25 @@ const AnimatedText = ({
 
 const SecondPart = ({ second, secondDescription, soundStates, toggleSound }) => {
   return (
-    <div className={`w-full relative flex flex-col lg:flex-row lg:justify-between px-3 lg:px-[50px] py-6 lg:py-[15px] gap-x-[20px] gap-y-[20px] lg:gap-y-[23px] overflow-hidden`}>
+    <div className={`w-full relative flex ${secondDescription ? 'flex-col lg:flex-row lg:justify-between' : 'justify-center'} px-3 lg:px-[25px] py-6 lg:py-[15px] gap-x-[20px] gap-y-[20px] lg:gap-y-[23px] overflow-hidden`}>
       {second?.map((media, index) => (
         <React.Fragment key={index}>
-          {/* Text Section */}
-          <div className="lg:w-1/2 justify-center flex flex-col text-[#181919] lg:px-[45px]">
-           
-            <AnimatedText
-              text={secondDescription}
-              el="p"
-              className="text-[18px] leading-[21.6px] text-justify tracking-tighter font-custom2 pt-2 2xl:w-3/4"
-              animation={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.5, type: 'spring', stiffness: 50 } }
-              }}
-            />
-          </div>
-
+              {/* Conditionally Render Text Section */}
+          {secondDescription && (
+            <div className="lg:w-1/2 justify-center flex flex-col text-[#181919] lg:px-[45px]">
+              <AnimatedText
+                text={secondDescription}
+                el="p"
+                className="text-[18px] leading-[21.6px] text-justify tracking-tighter font-custom2 pt-2 2xl:w-3/4"
+                animation={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, type: 'spring', stiffness: 50 } }
+                }}
+              />
+            </div>
+          )}
           {/* Media Section */}
-          <div className="lg:w-1/2 h-80 lg:h-fit relative">
+          <div className={`${secondDescription ? 'lg:w-1/2' : 'w-full'} h-80 lg:h-fit relative`}>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -120,6 +120,8 @@ const SecondPart = ({ second, secondDescription, soundStates, toggleSound }) => 
               ))}
             </motion.div>
           </div>
+
+        
         </React.Fragment>
       ))}
     </div>

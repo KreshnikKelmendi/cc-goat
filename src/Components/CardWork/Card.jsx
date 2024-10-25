@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import project1 from "../Assets/data-1.png";
+import { data } from '../Works/works';
 
 // Example data for the carousel
 const carouselData = [
@@ -105,10 +106,10 @@ const Card = () => {
         customLeftArrow={<CustomLeftArrow />} // Custom left arrow
         customRightArrow={<CustomRightArrow />} // Custom right arrow
       >
-        {carouselData.map((item) => (
+        {data?.map((item) => (
           <div key={item.id} className="text-center w-full lg:w-[276px]">
             {/* Image */}
-            <img src={item.imageUrl} alt={item.altText} className=" lg:h-[358px] w-full lg:w-[276px] rounded-t-[10px]" />
+            <img src={item.main} alt={item.altText} className=" lg:h-[358px] w-full lg:w-[276px] object-cover rounded-t-[10px]" />
 
             {/* Title */}
             <p className="h-[51px] hover:bg-[#6BECD0] hover:duration-300 font-custom flex justify-center rounded-b-[12px] items-center text-lg font-semibold border border-[#181919]">

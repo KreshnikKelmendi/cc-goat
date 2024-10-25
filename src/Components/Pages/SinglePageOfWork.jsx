@@ -5,6 +5,8 @@ import Navbar from '../navbar/Navbar';
 import FirstPart from './FirstPart';
 import SecondPart from './SecondPart';
 import ThirdPart from './ThirdPart';
+import SpecificPart from './SpecificPart';
+import SecondSpecificPart from './SecondSpecificPart';
 
 const SinglePageOfWork = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +30,7 @@ const SinglePageOfWork = () => {
         );
     }
 
-    const { title, cover, first, second, third, fourth, secondDescription, fifth, sixth, seventh, eight, nine, ten } = work; // Extract title, main image, and first media
+    const { title, cover, first, second, third, fourth, secondDescription, fifth, sixth, seventh, eight, nine, ten, specific, specificImage, secondSpecificImage } = work; // Extract title, main image, and first media
 
     const toggleSound = (index) => {
         setSoundStates((prev) => ({
@@ -70,7 +72,12 @@ const SinglePageOfWork = () => {
                 toggleSound={toggleSound}
                 workID={workID}
             />
-
+            <SpecificPart
+                specific={[specificImage]}
+                secondDescription={secondDescription}
+                soundStates={soundStates}
+                toggleSound={toggleSound}
+            />
             <SecondPart
                 second={[fourth]}
                 secondDescription={secondDescription}
@@ -78,6 +85,13 @@ const SinglePageOfWork = () => {
                 toggleSound={toggleSound}
             />
 
+
+<SecondSpecificPart
+                secondSpecific={[secondSpecificImage]}
+                secondDescription={secondDescription}
+                soundStates={soundStates}
+                toggleSound={toggleSound}
+            />
             <ThirdPart
                 third={[fifth, sixth, seventh, eight, nine, ten]} // Wrap first in an array if it's a single image or video
                 soundStates={soundStates}

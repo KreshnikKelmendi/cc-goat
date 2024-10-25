@@ -2,6 +2,8 @@ import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
 import { FiMousePointer } from "react-icons/fi";
 import image1 from "../Assets/data-1.png"
+import image2 from "../Assets/espress-1.png"
+import image3 from "../Assets/step-1.png"
 
 export const Example = () => {
   return (
@@ -10,14 +12,8 @@ export const Example = () => {
       rotationRange={25}
       images={[
         image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1,
-        image1
+        image2,
+        image3
       ]}
     >
       <section className="grid h-screen w-full place-content-center relative">
@@ -126,7 +122,7 @@ const MouseImageTrail = ({
 
       {images.map((img, index) => (
         <img
-          className="pointer-events-none absolute left-0 top-0 h-48 w-auto rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
+          className="pointer-events-none absolute left-0 top-0 h-[250px] w-[180px] rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
           src={img}
           alt={`Mouse move image ${index}`}
           key={index}

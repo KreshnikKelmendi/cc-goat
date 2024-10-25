@@ -4,6 +4,7 @@ import ContactBanner from '../VideoBanner/ContactBanner'
 import SvgBanner from '../SvgBanner/SvgBanner'
 import Card from '../CardWork/Card'
 import Services from '../Services/Services'
+import { Example } from '../Mouse/Example'
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
    <SvgBanner />
    <Card />
    <Services />
+   <Example />
    </>
   )
 }
