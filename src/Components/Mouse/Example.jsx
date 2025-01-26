@@ -2,7 +2,7 @@ import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
 import { FiMousePointer } from "react-icons/fi";
 import image1 from "../Assets/data-1.png"
-import image2 from "../Assets/espress-1.png"
+// import image2 from "../Assets/espress-1.png"
 import image3 from "../Assets/step-1.png"
 
 export const Example = () => {
@@ -12,7 +12,7 @@ export const Example = () => {
       rotationRange={25}
       images={[
         image1,
-        image2,
+    
         image3
       ]}
     >

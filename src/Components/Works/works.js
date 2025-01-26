@@ -11,11 +11,13 @@ import mellow9 from "../Assets/mellow-9.png"
 import mellow10 from "../Assets/mellow-10.png"
 import mellowCover from "../Assets/mellow-main.png"
 
-import esspresso1 from "../Assets/espress-main.png"
-import espressCover from "../Assets/espress-cover.png"
-import espress2 from "../Assets/espress-2.png"
-import espress3 from "../Assets/espress-3.png"
-import espress4 from "../Assets/espress-4.png"
+import esspresso1 from "../Assets/esspreso-lab/espress-1.png"
+import espressCover from "../Assets/esspreso-lab/espress-1.png"
+import espress1 from "../Assets/esspreso-lab/espress-1.png"
+import espress2 from "../Assets/esspreso-lab/espress-2.png"
+import espress3 from "../Assets/esspreso-lab/espress-3.png"
+import espress4 from "../Assets/esspreso-lab/espress-4.png"
+import espress5 from "../Assets/esspreso-lab/espress-5.png"
 
 import step from "../Assets/step-1.png"
 import stepCover from "../Assets/step-cover.png"
@@ -51,11 +53,27 @@ import nature3 from "../Assets/nature-specific.png"
 
 import cadhom from "../Assets/cadhom-main.png"
 import cadhomCover from "../Assets/cadhom-cover.png"
-import cadhom1 from "../Assets/cadhom-1.png"
-import cadhom2 from "../Assets/cadhom-2.png"
-import cadhom3 from "../Assets/cadhom-specific.png"
-import cadhom4 from "../Assets/cadhom-3.png"
-import cadhom5 from "../Assets/cadhom-4.png"
+import cadhom1 from "../Assets/cadhom/cadhom-01.png"
+import cadhom2 from "../Assets/cadhom/cadhom-2.png"
+import cadhom3 from "../Assets/cadhom/cadhom-03.png"
+import cadhom4 from "../Assets/cadhom/cadhom-04.png"
+import cadhom5 from "../Assets/cadhom/cadhom-05.png"
+import cadhom6 from "../Assets/cadhom/cadhom-06.png"
+import cadhom7 from "../Assets/cadhom/cadhom-07.png"
+import cadhom8 from "../Assets/cadhom/cadhom-08.png"
+import cadhom9 from "../Assets/cadhom/cadhom-09.png"
+import cadhom10 from "../Assets/cadhom/cadhom-10.png"
+
+import qaza from "../Assets/qazakompani/01.png"
+import qaza1 from "../Assets/qazakompani/Qaza Kompani.mp4"
+import qaza2 from "../Assets/qazakompani/02.jpg"
+import qaza3 from "../Assets/qazakompani/03.jpg"
+import qaza4 from "../Assets/qazakompani/04.jpg"
+import qaza5 from "../Assets/qazakompani/05.jpg"
+import qaza6 from "../Assets/qazakompani/06.jpg"
+import qaza7 from "../Assets/qazakompani/07.jpg"
+import qaza8 from "../Assets/qazakompani/08.jpg"
+
 
 
 const data = [
@@ -64,7 +82,8 @@ const data = [
       main: mellow, // Replace with actual image URL
       cover: mellowCover,
       title: 'MELLOW',
-      category: 'Branding, Animation, Website, Packaging, Design',
+      titleColor: "#FCF5F2",
+      category: 'Branding',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
       first: mellow3,
       second: mellow1,
@@ -83,18 +102,22 @@ const data = [
       main: esspresso1, // Replace with actual image URL
       cover: espressCover,
       title: 'ESPRESSO LAB',
-      category: 'Ilustration, Animation',
+      titleColor: "#FCF5F2",
+      category: 'Illustration',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
-      first: espress2,
-      second: espress3,
-      specificImage: espress4
+      first: espress1,
+      second: espress2,
+      third: espress3,
+      fourth: espress4,
+      fifth: espress5
     },
     {
         id: 3,
         main: step, // Replace with actual image URL
         cover: stepCover,
         title: 'STEP ARCH',
-        category: 'Branding, Animation, Websites, Packaging, Illustration',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
         description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
         first: step1,
         second: step2,
@@ -113,7 +136,8 @@ const data = [
         main: aditya, // Replace with actual image URL
         cover: adityaCover,
         title: 'ADITYA',
-        category: 'Branding, Animation, Websites, Packaging, Illustration',
+        titleColor: "#FCF5F2",
+        category: 'Social Media',
         description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
         first: aditya2,
         second: aditya3,
@@ -132,7 +156,8 @@ const data = [
         main: nature, // Replace with actual image URL
         cover: natureCover,
         title: 'NATURE WEALTH',
-        category: 'Branding, Animation, Websites, Packaging, Illustration',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
         description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
         first: nature1,
         second: nature2,
@@ -143,13 +168,36 @@ const data = [
         main: cadhom, // Replace with actual image URL
         cover: cadhomCover,
         title: 'CADHOM',
-        category: 'Branding, Animation, Websites, Packaging, Illustration',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
         description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
         first: cadhom1,
         second: cadhom2,
-        specificImage: cadhom3,
-        fifth: cadhom4,
-        sixth: cadhom5
+        third: cadhom3,
+        fourth: cadhom4,
+        fifth: cadhom5,
+        sixth: cadhom6,
+        seventh: cadhom7,
+        eight: cadhom8,
+        nine: cadhom9,
+        ten: cadhom10
+      },
+      {
+        id: 7,
+        main: qaza, // Replace with actual image URL
+        title: 'QAZA KOMPANI',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
+        description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
+        first: qaza1,
+        second: qaza2,
+        third: qaza3,
+        fourth: qaza4,
+        fifth: qaza5,
+        sixth: qaza6,
+        seventh: qaza7,
+        eight: qaza8,
+
       },
     
   ];

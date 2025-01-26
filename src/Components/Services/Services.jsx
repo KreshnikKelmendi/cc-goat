@@ -8,41 +8,58 @@ const servicesData = [
     title: "Branding",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#A055FF",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "Web Design",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#FCF5F2",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "3D Design",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
-    backgroundColor: "#A055FF",
+    backgroundColor: "#181919",
+    titleColor: "#FCF5F2",
+    descriptionColor: "#FCF5F2",
   },
   {
     title: "Campaign",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#FCF5F2",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "Animation",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#FCF5F2",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "Illustration",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
-    backgroundColor: "#6BECD0",
+    backgroundColor: "#DAFF00",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "Development",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#FCF5F2",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
   },
   {
     title: "TV ADS",
     description: "Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ",
     backgroundColor: "#6BECD0",
+    titleColor: "#181919",
+    descriptionColor: "#181919",
+
   },
 ];
 
@@ -69,17 +86,19 @@ const ServiceItem = ({ service, index }) => {
   };
 
   return (
-    <motion.div
-      ref={ref}
-      className="p-4 border-[1px] border-black border-t-0 border-b-0 py-12"
-      style={{ backgroundColor: service.backgroundColor }}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={variants}
-    >
-      <p className="font-custom1 text-[36px] mb-2">{service.title}</p>
-      <p className="font-custom2 text-[12px] leading-[14.4px] text-[#181919]">{service.description}</p>
-    </motion.div>
+    <div className='border-[1px] border-t-0 border-b-0 border-black rounded-none'>
+      <motion.div
+        ref={ref}
+        className="p-4 pt-12 2xl:py-20 rounded-[12px] lg:ml-[10px] border-none"
+        style={{ backgroundColor: service.backgroundColor }}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={variants}
+      >
+        <p className="font-custom1 text-[36px] mb-2" style={{ color: service.titleColor }}>{service.title}</p>
+        <p className="font-custom2 text-[12px] leading-[14.4px] text-[#181919] text-justify tracking-tighter" style={{ color: service.descriptionColor }}>{service.description}</p>
+      </motion.div>
+    </div>
   );
 };
 
