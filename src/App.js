@@ -7,16 +7,18 @@ import PortfolioPage from "./Components/Pages/PortfolioPage";
 import WorkPage from "./Components/Pages/WorkPage";
 import SingleCategory from "./Components/portfolio/SingleCategory";
 import SingleWorkPortfolio from "./Components/portfolio/SingleWorkPortfolio";
-import AboutPortfolio from "./Components/portfolio/AboutPortfolio";
+
+import PageAbout from "./Components/portfolio/PageAbout";
+import CapraIcon from "./Components/portfolio/CapraIcon";
 
 function App() {
   const [showPalette, setShowPalette] = useState(false);
   const colors = [
-    { hex: "#181919" }, // Red
-    { hex: "#4d79ff" }, // Blue
-    { hex: "#4dff88" }, // Green
-    { hex: "#ffd34d" }, // Yellow
-    { hex: "#8b4dff" }, // Purple
+    { hex: "#181919" }, 
+    { hex: "#4d79ff" }, 
+    { hex: "#4dff88" }, 
+    { hex: "#ffd34d" }, 
+    { hex: "#8b4dff" }, 
   ];
 
   const changeBackgroundColor = (color) => {
@@ -46,13 +48,12 @@ function App() {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/work/:workID" element={<SingleCategory />} />
           <Route path="/workito/:workID" element={<SingleWorkPortfolio />} />
+          <Route path="/about-capracreative" element={<PageAbout />} />
         </Routes>
         <Footer />
 
         {/* AboutPortfolio Component */}
-        <div className="fixed top-3 right-3 z-50">
-          <AboutPortfolio />
-        </div>
+       
 
         {/* Color Palette */}
         <div className="fixed right-6 bottom-6 z-50 flex flex-col items-center gap-2">

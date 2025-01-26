@@ -113,7 +113,7 @@ const data = [
     },
     {
         id: 3,
-        main: step, // Replace with actual image URL
+        main: step4, // Replace with actual image URL
         cover: stepCover,
         title: 'STEP ARCH',
         titleColor: "#FCF5F2",
@@ -133,7 +133,7 @@ const data = [
       },
       {
         id: 4,
-        main: aditya, // Replace with actual image URL
+        main: aditya2, // Replace with actual image URL
         cover: adityaCover,
         title: 'ADITYA',
         titleColor: "#FCF5F2",
@@ -184,7 +184,7 @@ const data = [
       },
       {
         id: 7,
-        main: qaza, // Replace with actual image URL
+        main: qaza1, // Replace with actual image URL
         title: 'QAZA KOMPANI',
         titleColor: "#FCF5F2",
         category: 'Illustration',

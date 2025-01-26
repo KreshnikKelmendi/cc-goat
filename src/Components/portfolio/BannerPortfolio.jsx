@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import PortfolioCard from "./PortfolioCard";
+import MoreWork from "./MoreWork";
 
 const BannerPortfolio = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.5 });
@@ -51,7 +52,8 @@ const BannerPortfolio = () => {
         Explore our work and discover why is the agency you’ll want on your team.
       </p>
 
-      <PortfolioCard />
+      {/* <PortfolioCard /> */}
+      <MoreWork />
     </div>
   );
 };
