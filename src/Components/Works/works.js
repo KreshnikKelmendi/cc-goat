@@ -18,6 +18,7 @@ import espress2 from "../Assets/esspreso-lab/espress-2.png"
 import espress3 from "../Assets/esspreso-lab/espress-3.png"
 import espress4 from "../Assets/esspreso-lab/espress-4.png"
 import espress5 from "../Assets/esspreso-lab/espress-5.png"
+import espress6 from "../Assets/esspreso-lab/EspressoLab (1).mp4"
 
 import step from "../Assets/step-1.png"
 import stepCover from "../Assets/step-cover.png"
@@ -74,6 +75,13 @@ import qaza6 from "../Assets/qazakompani/06.jpg"
 import qaza7 from "../Assets/qazakompani/07.jpg"
 import qaza8 from "../Assets/qazakompani/08.jpg"
 
+import eggcellent from "../Assets/eggcellent/Eggcellent (1).mp4"
+import eggcellent2 from "../Assets/eggcellent/eggcellent-2.png"
+import eggcellent3 from "../Assets/eggcellent/eggcellent-3.png"
+import eggcellent4 from "../Assets/eggcellent/eggcellent-4.png"
+
+import chaintellect from "../Assets/chaintellect/Chaintellect (1).mp4"
+import chaintellect2 from "../Assets/chaintellect/Innoverse (1).mp4"
 
 
 const data = [
@@ -98,18 +106,43 @@ const data = [
       ten: mellow10
     },
     {
+      id: 8,
+      main: eggcellent, // Replace with actual image URL
+      cover: espressCover,
+      title: 'EGGCELENT',
+      titleColor: "#FCF5F2",
+      category: 'Illustration',
+      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      first: eggcellent,
+      second: eggcellent2,
+      third: eggcellent3,
+      fourth: eggcellent4,
+    },
+    {
       id: 2,
-      main: esspresso1, // Replace with actual image URL
+      main: espress6, // Replace with actual image URL
       cover: espressCover,
       title: 'ESPRESSO LAB',
       titleColor: "#FCF5F2",
       category: 'Illustration',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
-      first: espress1,
-      second: espress2,
+      first: espress6,
+      second: espress1,
       third: espress3,
       fourth: espress4,
-      fifth: espress5
+      fifth: espress5,
+      sixth: espress2
+    },
+    {
+      id: 9,
+      main: chaintellect, // Replace with actual image URL
+      cover: espressCover,
+      title: 'CHAINTELLECT',
+      titleColor: "#FCF5F2",
+      category: 'Animation',
+      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      first: chaintellect,
+      second: chaintellect2,
     },
     {
         id: 3,

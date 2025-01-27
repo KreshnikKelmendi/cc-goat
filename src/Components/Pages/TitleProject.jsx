@@ -17,14 +17,15 @@ const TitleProject = () => {
         <motion.div 
           key={item.id} 
           className="group cursor-pointer"
-          onMouseEnter={() => setHoveredTitle(item.id)} 
-          onMouseLeave={() => setHoveredTitle(null)}
+          
         >
           {/* Title Block - Block List Style */}
           <div className="text-center relative">
             <Link onClick={handleClick} to={`/workito/${item.id}`}>
               <h3 
                 className={`text-7xl lg:text-9xl font-custom1 text-[#333] block leading-[65px] lg:leading-[100px] transition-opacity duration-300 ease-out ${hoveredTitle && hoveredTitle !== item.id ? 'opacity-50' : ''}`}
+                onMouseEnter={() => setHoveredTitle(item.id)} 
+                onMouseLeave={() => setHoveredTitle(null)}
               >
                 {item.title}
               </h3>

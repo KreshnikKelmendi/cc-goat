@@ -9,16 +9,16 @@ const ColorCard = () => {
   ];
   
   const extendedColorArray = [
-    { name: "Rich black", hex: "001219" },
-    { name: "Midnight green", hex: "005f73" },
-    { name: "Dark cyan", hex: "0a9396" },
-    { name: "Tiffany Blue", hex: "94d2bd" },
-    { name: "Vanilla", hex: "e9d8a6" },
-    { name: "Gamboge", hex: "ee9b00" },
-    { name: "Alloy orange", hex: "ca6702" },
-    { name: "Rust", hex: "bb3e03" },
-    { name: "Rufous", hex: "ae2012" },
-    { name: "Auburn", hex: "9b2226" },
+    { name: "Design", hex: "001219" },
+    { name: "Creative", hex: "005f73" },
+    { name: "Illustration", hex: "0a9396" },
+    { name: "Social Media", hex: "94d2bd" },
+    { name: "Animation", hex: "e9d8a6" },
+    { name: "3D Design", hex: "ee9b00" },
+    { name: "Web Design", hex: "ca6702" },
+    { name: "Web Development", hex: "bb3e03" },
+    { name: "Photography", hex: "ae2012" },
+    { name: "Advertising", hex: "9b2226" },
   ];
 
   const spacerX = 16;
@@ -43,7 +43,7 @@ const ColorCard = () => {
         return (
           <motion.div
             key={index}
-            className={`relative p-6 rounded-t-2xl shadow-lg text-white w-56 h-[22vh] group cursor-pointer`}
+            className={`relative p-2 rounded-t-2xl shadow-lg text-white w-56 h-[22vh] group cursor-pointer`}
             whileHover={{
               scale: 1.1, // Increase size on hover
               opacity: 1,
@@ -51,7 +51,7 @@ const ColorCard = () => {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
             style={{
-              marginLeft: index === 0 ? 0 : "-15px",
+              marginLeft: index === 0 ? 0 : "-18px",
               transformOrigin: "center", // Ensure the center for scaling
               y: y, // Apply Y position based on mouse distance
               opacity: 1, // Apply opacity based on distance
@@ -60,7 +60,7 @@ const ColorCard = () => {
           >
             <div className="flex flex-col justify-center items-center h-full">
               <motion.p
-                className="text-2xl font-bold opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                className="text-xl font-bold opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-300 ease-in-out"
                 style={{ transition: "opacity 0.5s ease-out" }}
               >
                 {extendedColorArray[index].name}
