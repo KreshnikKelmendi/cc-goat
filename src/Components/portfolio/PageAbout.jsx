@@ -87,7 +87,7 @@ const PageAbout = () => {
 
           {/* Additional Description */}
           <motion.div
-            className="text-xl md:text-4xl font-custom1 text-center max-w-4xl leading-relaxed text-black"
+            className="text-xl md:text-4xl font-custom1 text-center max-w-4xl px-5 leading-relaxed text-black"
             style={{
               opacity: opacity, // Dynamic opacity
               transform: `scale(${scale})`, // Subtle scale effect

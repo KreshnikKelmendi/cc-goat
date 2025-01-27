@@ -83,6 +83,20 @@ import eggcellent4 from "../Assets/eggcellent/eggcellent-4.png"
 import chaintellect from "../Assets/chaintellect/Chaintellect (1).mp4"
 import chaintellect2 from "../Assets/chaintellect/Innoverse (1).mp4"
 
+import hebs from "../Assets/hebs/hebs-02.png"
+import hebs1 from "../Assets/hebs/hebs-01.mp4"
+import hebs2 from "../Assets/hebs/hebs-02.png"
+import hebs3 from "../Assets/hebs/hebs-03.png"
+import hebs4 from "../Assets/hebs/hebs-04.png"
+
+import shawarma from "../Assets/SHAWARMA/01-01.png"
+import shawarma1 from "../Assets/SHAWARMA/shawarma.png"
+import shawarma2 from "../Assets/SHAWARMA/02.png"
+import shawarma3 from "../Assets/SHAWARMA/03.png"
+import shawarma4 from "../Assets/SHAWARMA/04.png"
+import shawarma5 from "../Assets/SHAWARMA/05.png"
+import shawarma6 from "../Assets/SHAWARMA/06.png"
+
 
 const data = [
     {
@@ -143,6 +157,34 @@ const data = [
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
       first: chaintellect,
       second: chaintellect2,
+    },
+    {
+      id: 10,
+      main: hebs, // Replace with actual image URL
+      cover: espressCover,
+      title: 'HEBS',
+      titleColor: "#FCF5F2",
+      category: 'Animation, Advertising',
+      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      first: hebs1,
+      second: hebs2,
+      third: hebs3,
+      fourth: hebs4
+    },
+    {
+      id: 11,
+      main: shawarma, // Replace with actual image URL
+      cover: espressCover,
+      title: 'MY SHAWARMA',
+      titleColor: "#FCF5F2",
+      category: 'Animation, Advertising',
+      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      first: shawarma1,
+      second: shawarma2,
+      third: shawarma3,
+      fourth: shawarma4,
+      fifth: shawarma5,
+      sixth:shawarma6
     },
     {
         id: 3,

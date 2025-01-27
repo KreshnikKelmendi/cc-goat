@@ -9,7 +9,7 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
     return (
         <div className="w-full relative px-3 lg:px-[25px] gap-4 mt-12">
             <div  className={`grid gap-4 ${
-                workID === '9' ? 'lg:grid-cols-1' : 'lg:grid-cols-2'
+                workID === '9' || workID === "10" ? 'lg:grid-cols-1' : 'lg:grid-cols-2'
             }`}>
                 {first?.map((media, index) => (
                     <motion.div
