@@ -35,9 +35,10 @@ const Footer = () => {
                     <div className='flex pt-16 lg:pt-36 text-[#DAFF00] font-custom2'>
                         <div className=''>
                         <ul>
-                            <li>Facebook</li>
-                            <li>Instagram</li>
-                            <li>Linkedin</li>
+                            <a href='https://www.instagram.com/capracreative/' target='_blank'><li className='hover:scale-105 hover:text-[#A055FF] duration-300 ease-out'>Instagram</li></a>
+                            <a href='https://www.facebook.com/profile.php?id=61554428396249' target='_blank'><li className='hover:scale-105 hover:text-[#A055FF] duration-300 ease-out'>Facebook</li></a>
+                            <a href='https://www.linkedin.com/company/capra-creativee/posts/?feedView=all' target='_blank'><li className='hover:scale-105 hover:text-[#A055FF] duration-300 ease-out'>Linkedin</li></a>
+
 
                         </ul>
                         </div>

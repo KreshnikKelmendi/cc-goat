@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const CapraIcon = () => {
     return (
         <Link to="/about-capracreative">
-        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='rounded-full bg-white w-10 h-10 p-[5px] hover:-rotate-12 hover:duration-200 ease-in-out hover:bg-gray-300' width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_40_11)">
                 <path d="M15.6679 19.6591L15.6624 19.6646V19.6536L15.6679 19.6591Z" fill="black" />
                 <path d="M21.0196 14.6976C21.0196 15.752 20.4179 16.6058 19.6741 16.6058C18.9304 16.6058 18.3286 15.752 18.3286 14.6976C18.3286 13.6432 18.9321 12.7894 19.6741 12.7894C19.8303 12.7894 19.9777 12.8267 20.1161 12.8959C20.0185 13.0699 19.9599 13.2918 19.9599 13.535C19.9599 14.0941 20.2723 14.5485 20.6593 14.5485C20.7853 14.5485 20.9025 14.5006 21.0054 14.4136C21.0161 14.5059 21.0214 14.6018 21.0214 14.6994L21.0196 14.6976Z" fill="black" />

@@ -14,6 +14,11 @@ body{
   box-shadow: 5px 5px 0px 0px #181919;
 }
 
+
+.button-shadow1:hover{
+  box-shadow: 5px 5px 0px 0px white;
+}
+
 @font-face {
   font-family: Atyp;
   src: url(../public/fonts/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf)

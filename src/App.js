@@ -47,7 +47,7 @@ function App() {
           <Route path="/" element={<PortfolioPage />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/work/:workID" element={<SingleCategory />} />
-          <Route path="/workito/:workID" element={<SingleWorkPortfolio />} />
+          <Route path="/works/:workID" element={<SingleWorkPortfolio />} />
           <Route path="/about-capracreative" element={<PageAbout />} />
         </Routes>
         <Footer />
