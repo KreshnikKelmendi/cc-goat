@@ -122,9 +122,9 @@ const data = [
     {
       id: 8,
       main: eggcellent, // Replace with actual image URL
-      cover: espressCover,
+      cover: eggcellent2,
       title: 'EGGCELENT',
-      titleColor: "#FCF5F2",
+      titleColor: "#181919",
       category: 'Illustration',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
       first: eggcellent,
@@ -150,7 +150,7 @@ const data = [
     {
       id: 9,
       main: chaintellect, // Replace with actual image URL
-      cover: espressCover,
+      // cover: espressCover,
       title: 'CHAINTELLECT',
       titleColor: "#FCF5F2",
       category: 'Animation',
@@ -161,10 +161,10 @@ const data = [
     {
       id: 10,
       main: hebs, // Replace with actual image URL
-      cover: espressCover,
+      cover: hebs3,
       title: 'HEBS',
-      titleColor: "#FCF5F2",
-      category: 'Animation, Advertising',
+      titleColor: "#181919",
+      category: 'Advertising',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
       first: hebs1,
       second: hebs2,
@@ -174,10 +174,10 @@ const data = [
     {
       id: 11,
       main: shawarma, // Replace with actual image URL
-      cover: espressCover,
+      cover: shawarma1,
       title: 'MY SHAWARMA',
       titleColor: "#FCF5F2",
-      category: 'Animation, Advertising',
+      category: 'Advertising',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
       first: shawarma1,
       second: shawarma2,
@@ -243,7 +243,7 @@ const data = [
         main: cadhom, // Replace with actual image URL
         cover: cadhomCover,
         title: 'CADHOM',
-        titleColor: "#FCF5F2",
+        titleColor: "#181919",
         category: 'Illustration',
         description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
         first: cadhom1,
@@ -260,6 +260,7 @@ const data = [
       {
         id: 7,
         main: qaza1, // Replace with actual image URL
+        cover: qaza5,
         title: 'QAZA KOMPANI',
         titleColor: "#FCF5F2",
         category: 'Illustration',

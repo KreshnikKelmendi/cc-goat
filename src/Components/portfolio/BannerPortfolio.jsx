@@ -79,7 +79,7 @@ const BannerPortfolio = () => {
         </motion.div>
       </motion.div>
 
-      <p className="text-[18px] text-[#DAFF00] font-custom2">
+      <p className="text-[18px] px-5 lg:px-0 text-[#DAFF00] font-custom2">
         Explore our work and discover why is the agency you’ll want on your team.
       </p>
 

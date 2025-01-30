@@ -7,7 +7,7 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
     // const isTwoColumnLayout = workID === '2' || workID === '5' || workID === '6';
 
     return (
-        <div className="w-full relative px-3 lg:px-[25px] gap-4 mt-12">
+        <div className="w-full relative px-3 lg:px-[25px] gap-4 mt-4">
             <div  className={`grid gap-4 ${
                 workID === '9' || workID === "10" ? 'lg:grid-cols-1' : 'lg:grid-cols-2'
             }`}>
@@ -22,7 +22,7 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
                         {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
                             <>
                                 <video
-                                    className="w-full h-full lg:h-[60ch] object-cover rounded-[10px]"
+                                    className="w-full h-full lg:h-[60ch] 2xl:h-[90ch] object-cover rounded-[10px]"
                                     autoPlay
                                     playsInline
                                     loop
@@ -39,7 +39,7 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
                                 </button>
                             </>
                         ) : (
-                            <img src={media} alt="" className="w-full h-full lg:h-[60ch] rounded-[10px] object-cover" />
+                            <img src={media} alt="" className="w-full h-full lg:h-[60ch] 2xl:h-[90ch] rounded-[10px] object-cover" />
                         ))}
                     </motion.div>
                 ))}

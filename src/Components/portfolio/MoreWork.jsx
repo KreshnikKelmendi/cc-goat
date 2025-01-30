@@ -29,11 +29,11 @@ const MoreWork = () => {
   return (
     <div className="px-5 lg:px-16 pt-12">
       {/* Category Buttons */}
-      <div className="grid grid-cols-1 lg:flex  justify-center gap-4 mb-8">
+      <div className="grid grid-cols-1 lg:flex justify-center gap-4 mb-8">
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-4 py-3 lg:py-2 hover:rotate-3 hover:duration-500 button-shadow1 ease-out hover:shadow-md hover:scale-105 rounded-lg text-xl uppercase tracking-[0.5px] font-custom1 lg:text-3xl transition-all duration-300 ${
+            className={`px-4 py-3 lg:py-2 button-shadow w-full lg:w-[230px] lg:hover:rotate-3 hover:duration-500 button-shadow1 ease-out hover:shadow-md hover:scale-105 rounded-[25px] text-xl uppercase tracking-[0.5px] font-custom1 lg:text-2xl 2xl:text-3xl transition-all duration-300 ${
               activeCategory === category
                 ? "bg-[#A055FF] text-white"
                 : "bg-gray-200 hover:bg-[#6BECD0] hover:text-black"
@@ -52,7 +52,7 @@ const MoreWork = () => {
         </div>
       ) : (
         // Filtered Items Grid
-        <div className="grid gap-8 lg:gap-24 grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-8 gap-y-0 lg:gap-x-24 lg:gap-y-8 grid-cols-2 lg:grid-cols-3">
           {filteredData.map((item) => (
             <div key={item.id} className="relative group overflow-hidden">
               <motion.div
@@ -105,7 +105,7 @@ const TiltCard = ({ item }) => {
   };
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smoth" });
   };
 
   const isVideo = (url) => url.endsWith(".mp4");
@@ -133,7 +133,7 @@ const TiltCard = ({ item }) => {
               <video
                 src={item.main}
                 alt={item.title}
-                className={`object-cover rounded-3xl w-full h-[15ch] lg:h-[50vh] transition-transform duration-300 group-hover:scale-110 group-hover:rounded-none ${
+                className={`object-cover rounded-3xl w-full h-[17ch] lg:h-[50vh] transition-transform duration-300 group-hover:scale-100 group-hover:rounded-[3xl] ${
                   isVideoLoading ? "opacity-0" : "opacity-100"
                 }`}
                 muted
@@ -147,19 +147,15 @@ const TiltCard = ({ item }) => {
             <img
               src={item.main}
               alt={item.title}
-              className="object-cover rounded-3xl w-full h-[15ch] lg:h-[50vh] transition-transform duration-300 group-hover:scale-110 group-hover:rounded-none"
+              className="object-cover rounded-3xl w-full h-[17ch] lg:h-[50vh] transition-all duration-300 group-hover:w-[100%] group-hover:rounded-[3xl]"
             />
           )}
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full bg-black h-full bg-opacity-60 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out z-10">
-          <div className="flex flex-col justify-end items-center h-full p-4">
-            <div className="absolute top-3">
-              <CapraIcon />
-            </div>
-            <p className="text-xl lg:text-3xl font-custom1 text-white">{item.title}</p>
-            <p className="text-sm font-custom2 text-white">{item.category}</p>
-          </div>
+        {/* Title and Category */}
+        <div className="mt-2 lg:mt-4 px-2 pb-4 text-white">
+          <p className="text-xl lg:text-4xl font-custom1 tracking-[0.6px] text-left">{item.title}</p>
+          <p className="text-sm font-custom2 text-left">{item.category}</p>
         </div>
       </Link>
     </motion.div>

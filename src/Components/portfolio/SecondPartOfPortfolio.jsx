@@ -21,7 +21,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
                         {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
                             <>
                                 <video
-                                    className="w-full h-full lg:h-[60ch] object-cover rounded-[10px]"
+                                    className="w-full h-full lg:h-[60ch] 2xl:h-[90ch] object-cover rounded-[10px]"
                                     autoPlay
                                     playsInline
                                     loop
@@ -44,7 +44,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
                             <img
                                 src={media}
                                 alt=""
-                                className="w-full h-full lg:h-[60ch] rounded-[10px] object-cover"
+                                className="w-full h-full lg:h-[60ch] 2xl:h-[90ch] rounded-[10px] object-cover"
                             />
                         ))}
                     </motion.div>
