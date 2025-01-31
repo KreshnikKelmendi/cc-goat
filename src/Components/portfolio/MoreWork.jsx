@@ -33,7 +33,7 @@ const MoreWork = () => {
         {categories.map((category) => (
           <button
             key={category}
-            className={`px-4 py-3 lg:py-2 button-shadow w-full lg:w-[230px] lg:hover:rotate-3 hover:duration-500 button-shadow1 ease-out hover:shadow-md hover:scale-105 rounded-[25px] text-xl uppercase tracking-[0.5px] font-custom1 lg:text-2xl 2xl:text-3xl transition-all duration-300 ${
+            className={`px-4 py-3 lg:py-2 w-full lg:w-[230px] lg:hover:rotate-3 hover:duration-500 ease-out hover:shadow-md hover:scale-105 rounded-[18px] text-xl uppercase tracking-[0.5px] font-custom1 lg:text-2xl 2xl:text-3xl transition-all duration-300 ${
               activeCategory === category
                 ? "bg-[#A055FF] text-white"
                 : "bg-gray-200 hover:bg-[#6BECD0] hover:text-black"
