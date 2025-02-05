@@ -7,7 +7,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
         <div className="w-full relative px-3 lg:px-[25px] gap-4 mt-4">
             <div
                className={`grid gap-4 ${
-                workID === '6' || workID === '7' || workID === '8' || workID === '2' || workID === "10" || workID === "11" ? 'lg:grid-cols-2' : 'lg:grid-cols-3'
+                workID === '6' || workID === '7' || workID === '8' || workID === '2' || workID === "10" || workID === "11" || workID === "18" ? 'lg:grid-cols-2' : 'lg:grid-cols-3'
             }`}
             >
                 {second?.map((media, index) => (

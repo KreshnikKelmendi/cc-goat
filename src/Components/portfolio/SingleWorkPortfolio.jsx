@@ -63,7 +63,7 @@ const SingleWorkPortfolio = () => {
             </motion.div>
 
             {/* Title with Image as Background */}
-            <div className="relative w-full h-[45ch] lg:h-[75ch] xl:h-[80ch] 2xl:h-[92ch] flex justify-center items-center px-3 lg:px-[25px]">
+            <div className="relative w-full h-[45ch] lg:h-[80ch] xl:h-[85ch] 2xl:h-[98ch] flex justify-center items-center px-3 lg:px-[25px]">
                 {/* Image as a regular element (not absolute) */}
                 <img
                     src={cover}

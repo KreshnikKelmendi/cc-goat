@@ -97,6 +97,18 @@ import shawarma4 from "../Assets/SHAWARMA/04.png"
 import shawarma5 from "../Assets/SHAWARMA/05.png"
 import shawarma6 from "../Assets/SHAWARMA/06.png"
 
+import bicikleta1 from "../Assets/bicikleta/S 01.png"
+import bicikleta2 from "../Assets/bicikleta/S 02.png"
+import bicikleta3 from "../Assets/bicikleta/S 03.png"
+
+import illustration21 from "../Assets/illustration2/001.jpg"
+import illustration22 from "../Assets/illustration2/002.jpg"
+import illustration23 from "../Assets/illustration2/003.png"
+import illustration24 from "../Assets/illustration2/005.png"
+import illustration25 from "../Assets/illustration2/01.jpg"
+import illustration26 from "../Assets/illustration2/02.png"
+import illustration27 from "../Assets/illustration2/03.png"
+
 
 const data = [
     {
@@ -274,6 +286,32 @@ const data = [
         seventh: qaza7,
         eight: qaza8,
 
+      },
+      {
+        id: 17,
+        main: bicikleta1, // Replace with actual image URL
+        cover: bicikleta1,
+        title: 'ILLUSTRATION 1',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
+        description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
+        first: bicikleta2,
+        second: bicikleta3,
+      },
+      {
+        id: 18,
+        main: illustration21, // Replace with actual image URL
+        cover: illustration21,
+        title: 'ILLUSTRATION 2',
+        titleColor: "#FCF5F2",
+        category: 'Illustration',
+        description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
+        first: illustration22,
+        second: illustration23,
+        third: illustration24,
+        fourth: illustration25,
+        fifth: illustration26,
+        sixth: illustration27
       },
     
   ];
