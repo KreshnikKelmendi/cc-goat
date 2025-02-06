@@ -85,9 +85,14 @@ import chaintellect2 from "../Assets/chaintellect/Innoverse (1).mp4"
 
 import hebs from "../Assets/hebs/hebs-02.png"
 import hebs1 from "../Assets/hebs/hebs-01.mp4"
-import hebs2 from "../Assets/hebs/hebs-02.png"
-import hebs3 from "../Assets/hebs/hebs-03.png"
-import hebs4 from "../Assets/hebs/hebs-04.png"
+import hebs2 from "../Assets/hebs/hebs-05.mp4"
+import hebs3 from "../Assets/hebs/hebs-hebs-01.mp4"
+import hebs4 from "../Assets/hebs/hebs-hebs-02.mp4"
+import hebs5 from "../Assets/hebs/hebs-hebs-03.mp4"
+import hebs6 from "../Assets/hebs/hebs-02.png"
+import hebs7 from "../Assets/hebs/hebs-03.png"
+import hebs8 from "../Assets/hebs/hebs-04.png"
+
 
 import shawarma from "../Assets/SHAWARMA/01-01.png"
 import shawarma1 from "../Assets/SHAWARMA/shawarma.png"
@@ -173,7 +178,7 @@ const data = [
     {
       id: 10,
       main: hebs, // Replace with actual image URL
-      cover: hebs3,
+      cover: hebs7,
       title: 'HEBS',
       titleColor: "#181919",
       category: 'Advertising',
@@ -181,7 +186,11 @@ const data = [
       first: hebs1,
       second: hebs2,
       third: hebs3,
-      fourth: hebs4
+      fourth: hebs4,
+      fifth: hebs5,
+      sixth: hebs6,
+      seventh: hebs7,
+      eight: hebs8
     },
     {
       id: 11,

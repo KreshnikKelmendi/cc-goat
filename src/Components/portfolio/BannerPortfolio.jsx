@@ -4,9 +4,10 @@ import { useInView } from "react-intersection-observer";
 import PortfolioCard from "./PortfolioCard";
 import MoreWork from "./MoreWork";
 import { Link } from "react-router-dom";
+import { TestA } from "./TestA";
 
 const BannerPortfolio = () => {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.5 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
   // Animation variants for glitch
   const glitchVariant = {
@@ -82,7 +83,7 @@ const BannerPortfolio = () => {
       <p className="text-[18px] px-5 lg:px-0 text-[#DAFF00] font-custom2">
         Explore our work and discover why is the agency you’ll want on your team.
       </p>
-
+      <TestA />
       {/* <PortfolioCard /> */}
       <MoreWork />
     </div>
