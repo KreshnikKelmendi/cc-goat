@@ -154,7 +154,7 @@ const data = [
       main: espress6, // Replace with actual image URL
       cover: espressCover,
       title: 'ESPRESSO LAB',
-      titleColor: "#FCF5F2",
+      titleColor: "#181919",
       category: 'Illustration',
       description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
       first: espress6,
