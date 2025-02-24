@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineSound } from 'react-icons/ai';
+import { FaExpand, FaWindowMaximize } from 'react-icons/fa';
 
 const EqualizerIcon = () => {
   return (
@@ -70,7 +71,6 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
                   playsInline
                   loop
                   muted={!soundStates[index]}
-                  onClick={() => handleMediaClick(media)}
                 >
                   <source src={media} type="video/mp4" />
                 </video>
@@ -83,6 +83,12 @@ const FirstPartOfPortfolio = ({ first, soundStates, toggleSound, workID }) => {
                   ) : (
                     <AiOutlineSound className="w-4 h-4" />
                   )}
+                </button>
+                <button
+                  onClick={() => handleMediaClick(media)}
+                  className="absolute bottom-2 right-2 bg-black/50 p-2 rounded-full text-white cursor-pointer"
+                >
+                  <FaExpand className="w-5 h-5" />
                 </button>
               </>
             ) : (

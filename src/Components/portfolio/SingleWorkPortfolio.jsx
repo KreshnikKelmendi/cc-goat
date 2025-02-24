@@ -20,7 +20,7 @@ const SingleWorkPortfolio = () => {
         );
     }
 
-    const { title, cover, first, second, third, fourth, secondDescription, fifth, sixth, seventh, eight, nine, ten, titleColor, specific, specificImage, secondSpecificImage } = work;
+    const { title, cover, first, second, third, fourth, description, secondDescription, fifth, sixth, seventh, eight, nine, ten, titleColor, specific, specificImage, secondSpecificImage } = work;
 
     const toggleSound = (index) => {
         setSoundStates((prev) => ({
@@ -64,23 +64,27 @@ const SingleWorkPortfolio = () => {
 
             {/* Title with Image as Background */}
             <div className="relative w-full h-[45ch] lg:h-[80ch] xl:h-[85ch] 2xl:h-[98ch] flex justify-center items-center px-3 lg:px-[25px]">
-                {/* Image as a regular element (not absolute) */}
-                <img
-                    src={cover}
-                    alt={title}
-                    className="rounded-[10px] w-full h-full object-cover"
-                />
+                {/* Image Wrapper with Overlay Effect */}
+                <div className="absolute inset-0 w-full h-full bg-opacity-95 px-3 lg:px-6 rounded-[10px] mix-blend-overlay">
+                    <img
+                        src={cover}
+                        alt={title}
+                        className="w-full h-full object-cover rounded-[10px]"
+                    />
+                </div>
 
                 {/* Title with absolute positioning */}
                 <motion.div
-                    className="absolute top-1/2 left-8 lg:left-16 -translate-y-1/2 text-7xl lg:text-[250px] 2xl:text-[250px] w-full leading-[110px] lg:leading-[203px] font-custom1 uppercase"
+                    className="absolute top-1/2 px-8 lg:px-0 lg:left-16 -translate-y-1/2 text-7xl lg:text-[250px] 2xl:text-[250px] w-full leading-[110px] lg:leading-[203px] font-custom1 z-10"
                     initial="hidden"
                     animate="visible"
                     style={{ color: titleColor }}
                 >
-                    <div className="block">{title}</div>
+                    <div className="block uppercase">{title}</div>
+                    <div className="text-sm lg:text-base lg:w-1/2 font-custom2">{description}</div>
                 </motion.div>
             </div>
+
 
 
             {/* First, Second, and Third Parts of Portfolio */}

@@ -82,6 +82,7 @@ import eggcellent4 from "../Assets/eggcellent/eggcellent-4.png"
 
 import chaintellect from "../Assets/chaintellect/Chaintellect (1).mp4"
 import chaintellect2 from "../Assets/chaintellect/Innoverse (1).mp4"
+import chainCover from "../Assets/chaintellect/chain.png"
 
 import hebs from "../Assets/hebs/hebs-02.png"
 import hebs1 from "../Assets/hebs/hebs-01.mp4"
@@ -123,7 +124,7 @@ const data = [
       title: 'MELLOW',
       titleColor: "#FCF5F2",
       category: 'Branding',
-      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?). ',
+      description: 'Mellow is a brand that blends creativity with precision, bringing bold ideas to life. We work on this brand to craft a unique identity that captivates and resonates. Specializing in branding for croissants, Mellow stands out with a distinct personality and a design that leaves a lasting impression.',
       first: mellow3,
       second: mellow1,
       third: mellow2,
@@ -141,9 +142,9 @@ const data = [
       main: eggcellent, // Replace with actual image URL
       cover: eggcellent2,
       title: 'EGGCELENT',
-      titleColor: "#181919",
+      titleColor: "#FCF5F2",
       category: 'Illustration',
-      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      description: 'Eggcellent is a brand full of character and charm, brought to life through vibrant illustrations and dynamic animations. We have worked on various illustrations and animations for Eggcellent, crafting visuals that capture its unique essence and playful spirit. Every detail is carefully designed to tell a story, making Eggcellent not just a brand, but an experience that delights and engages.',
       first: eggcellent,
       second: eggcellent2,
       third: eggcellent3,
@@ -154,9 +155,9 @@ const data = [
       main: espress6, // Replace with actual image URL
       cover: espressCover,
       title: 'ESPRESSO LAB',
-      titleColor: "#181919",
+      titleColor: "#DAFF00",
       category: 'Illustration',
-      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      description: 'Espresso Lab is a coffee space where rich flavors meet a passion for quality. We have created unique illustrations, animations, and designs that capture the essence of this exceptional coffee experience. Through our work, we bring the warmth, aroma, and craftsmanship of Espresso Lab to life, making every sip feel as special as the brand itself.',
       first: espress6,
       second: espress1,
       third: espress3,
@@ -167,11 +168,11 @@ const data = [
     {
       id: 9,
       main: chaintellect, // Replace with actual image URL
-      // cover: espressCover,
+      cover: chainCover,
       title: 'CHAINTELLECT',
       titleColor: "#FCF5F2",
       category: 'Animation',
-      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      description: 'Chaintellect is an innovative platform dedicated to the world of crypto, combining technology with seamless user experiences. We have worked on its design, UI/UX for the website, animations, and 3D elements to create a visually engaging and intuitive platform. Our work ensures that Chaintellect not only stands out in the crypto space but also provides a smooth and immersive experience for its users.',
       first: chaintellect,
       second: chaintellect2,
     },
@@ -180,9 +181,9 @@ const data = [
       main: hebs, // Replace with actual image URL
       cover: hebs7,
       title: 'HEBS',
-      titleColor: "#181919",
+      titleColor: "#FCF5F2",
       category: 'Advertising',
-      description: 'Where creativity meets precision, and bold ideas become unforgettable brands. We’re not just another agency—we’re your partners in crafting stories that resonate, designs that captivate, and brands that roar with personality (or should we say... bleat?).',
+      description: 'For HEBS, we have created a series of designs, illustrations, and animations tailored for advertising. Our work brings the brand to life with visually striking elements that capture attention and communicate its message effectively. Through creativity and precision, we’ve helped HEBS build a strong and engaging visual identity in the advertising space.',
       first: hebs1,
       second: hebs2,
       third: hebs3,

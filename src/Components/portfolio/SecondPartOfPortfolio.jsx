@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineSound } from 'react-icons/ai';
+import { FaExpand, FaWindowMaximize } from 'react-icons/fa';
 
 const EqualizerIcon = () => {
   return (
@@ -28,7 +29,6 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [fullscreenMedia, setFullscreenMedia] = useState(null);
 
-  // Close modal on ESC key press
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -67,7 +67,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
             {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
               <>
                 <video
-                  className="w-full h-full lg:h-[85ch] 2xl:h-[95ch] object-cover rounded-[10px] transition-opacity hover:bg-black/50 hover:opacity-50 cursor-pointer"
+                  className="w-full h-full lg:h-[449px] 2xl:h-[95ch] object-cover rounded-[10px] transition-opacity hover:bg-black/50 hover:opacity-50 cursor-pointer"
                   autoPlay
                   playsInline
                   loop
@@ -86,20 +86,33 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
                     <AiOutlineSound className="w-4 h-4" />
                   )}
                 </button>
+                <button
+                  onClick={() => handleMediaClick(media)}
+                  className="absolute bottom-2 right-2 text-white bg-black/50 rounded-full p-2 cursor-pointer"
+                >
+                  <FaExpand className="w-4 h-4" />
+                </button>
               </>
             ) : (
-              <img
-                src={media}
-                alt=""
-                className="w-full h-full lg:h-[85ch] 2xl:h-[95ch] rounded-[10px] object-cover transition-opacity hover:bg-black/70 hover:opacity-50 cursor-pointer"
-                onClick={() => handleMediaClick(media)}
-              />
+              <>
+                <img
+                  src={media}
+                  alt=""
+                  className="w-full h-full lg:h-[449px] 2xl:h-[95ch] rounded-[10px] object-cover transition-opacity hover:bg-black/70 hover:opacity-50 cursor-pointer"
+                  onClick={() => handleMediaClick(media)}
+                />
+                <button
+                  onClick={() => handleMediaClick(media)}
+                  className="absolute bottom-2 right-2 text-white bg-black/50 rounded-full p-2 cursor-pointer"
+                >
+                  <FaExpand className="w-4 h-4" />
+                </button>
+              </>
             ))}
           </motion.div>
         ))}
       </div>
 
-      {/* Fullscreen Modal */}
       {isFullscreen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
           <div className="relative w-full h-full">
@@ -124,7 +137,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
               onClick={closeFullscreen}
               className="absolute top-4 right-4 text-white text-4xl cursor-pointer"
             >
-              &times; {/* Larger Close button */}
+              &times;
             </button>
           </div>
         </div>
