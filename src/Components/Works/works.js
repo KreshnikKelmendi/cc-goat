@@ -141,7 +141,7 @@ const data = [
       id: 8,
       main: eggcellent, // Replace with actual image URL
       cover: eggcellent2,
-      title: 'EGGCELENT',
+      title: 'EGGCELLENT',
       titleColor: "#FCF5F2",
       category: 'Illustration',
       description: 'Eggcellent is a brand full of character and charm, brought to life through vibrant illustrations and dynamic animations. We have worked on various illustrations and animations for Eggcellent, crafting visuals that capture its unique essence and playful spirit. Every detail is carefully designed to tell a story, making Eggcellent not just a brand, but an experience that delights and engages.',

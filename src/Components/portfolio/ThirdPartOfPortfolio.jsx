@@ -47,7 +47,7 @@ const ThirdPartOfPortfolio = ({ third, soundStates, toggleSound, workID }) => {
                         {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
                             <>
                                 <video
-                                    className="w-full h-[70vh] object-cover rounded-[10px]"
+                                    className="w-full h-[70vh] 2xl:h-[85vh] object-cover rounded-[10px]"
                                     autoPlay
                                     playsInline
                                     loop
@@ -77,7 +77,7 @@ const ThirdPartOfPortfolio = ({ third, soundStates, toggleSound, workID }) => {
                                 <img
                                     src={media}
                                     alt=""
-                                    className="w-full lg:h-[449px] 2xl:h-[70vh] rounded-[10px] object-cover"
+                                    className="w-full lg:h-[449px] 2xl:h-[85vh] rounded-[10px] object-cover"
                                 />
                                 <button
                                     onClick={() => handleMediaClick(media)}

@@ -67,7 +67,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
             {media && (typeof media === 'string' && media.endsWith('.mp4') ? (
               <>
                 <video
-                  className="w-full h-full lg:h-[449px] 2xl:h-[95ch] object-cover rounded-[10px] transition-opacity hover:bg-black/50 hover:opacity-50 cursor-pointer"
+                  className="w-full h-full lg:h-[449px] 2xl:h-[85vh] object-cover rounded-[10px] transition-opacity hover:bg-black/50 hover:opacity-50 cursor-pointer"
                   autoPlay
                   playsInline
                   loop
@@ -98,7 +98,7 @@ const SecondPartOfPortfolio = ({ second, soundStates, toggleSound, workID }) => 
                 <img
                   src={media}
                   alt=""
-                  className="w-full h-full lg:h-[449px] 2xl:h-[95ch] rounded-[10px] object-cover transition-opacity hover:bg-black/70 hover:opacity-50 cursor-pointer"
+                  className="w-full h-full lg:h-[449px] 2xl:h-[85vh] rounded-[10px] object-cover transition-opacity hover:bg-black/70 hover:opacity-50 cursor-pointer"
                   onClick={() => handleMediaClick(media)}
                 />
                 <button

@@ -65,7 +65,7 @@ const SingleWorkPortfolio = () => {
             {/* Title with Image as Background */}
             <div className="relative w-full h-[45ch] lg:h-[80ch] xl:h-[85ch] 2xl:h-[98ch] flex justify-center items-center px-3 lg:px-[25px]">
                 {/* Image Wrapper with Overlay Effect */}
-                <div className="absolute inset-0 w-full h-full bg-opacity-95 px-3 lg:px-6 rounded-[10px] mix-blend-overlay">
+                <div className="absolute inset-0 w-full h-full px-3 lg:px-6 rounded-[10px] mix-blend-overlay">
                     <img
                         src={cover}
                         alt={title}
