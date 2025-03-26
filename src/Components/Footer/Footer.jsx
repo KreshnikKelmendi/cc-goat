@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div className='lg:p-16 px-5 mx-auto'>
                     <p className='text-[#DAFF00] font-custom2'>Send us a brief</p>
-                    <p className='text-[#A055FF] text-lg lg:text-[32px] font-custom2'>contact@capra-creative.com</p>
+                    <p className='text-[#A055FF] text-xl lg:text-[32px] font-custom2'>contact@capra-creative.com</p>
                     <div className='flex pt-16 lg:pt-36 text-[#DAFF00] font-custom2'>
                         <div className=''>
                         <ul>
